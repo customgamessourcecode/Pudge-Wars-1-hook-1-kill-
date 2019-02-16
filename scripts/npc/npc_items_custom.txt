@@ -1,0 +1,141 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Watcher's Gaze
+	//=================================================================================================================
+	"item_watchers_gaze"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"watchers_gaze"
+		"ScriptFile"					"items/item_watchers_gaze"
+
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"45.0"
+		"AbilityManaCost"				"75"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemStackable"					"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemDisplayOwnership"			"1"
+		"CustomShop"					"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_level"			"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_stats"				"20"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stone_duration"			"4.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_physical_damage"		"50"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"vision_cone"				"0.08715"		// 85 degree cone
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// Bogdugg's Lucky Femur
+	//=================================================================================================================
+	"item_bogduggs_lucky_femur"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"item_lua"
+		"AbilityTextureName"			"bogduggs_lucky_femur"
+		"ScriptFile"					"items/item_bogduggs_lucky_femur"
+
+		"Model"							"models/props_gameplay/treasure_chest001.vmdl"
+		"Effect"						"particles/generic_gameplay/dropped_aegis.vpcf"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemQuality"					""
+		"ItemStackable"					"0"
+		"ItemSellable"					"0"
+		"ItemShareability"				"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemKillable"					"0"
+		"ItemDisplayOwnership"			"1"
+		"CustomShop"					"1"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_level"		"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_mana_penalty"		"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"intelligence_penalty"	"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana_regen_sec"		"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"refresh_pct"			"100"
+			}
+		}
+	}
+
+}

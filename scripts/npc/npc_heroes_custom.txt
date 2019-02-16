@@ -1,0 +1,29 @@
+"DOTAHeroes"
+{
+//=================================================================================================================
+    // HERO: Pudge
+    //=================================================================================================================
+    "npc_dota_hero_pudge"
+	{
+	
+        // Abilities
+        //-------------------------------------------------------------------------------------------------------------
+        "Ability1"                "pudge_meat_hook"                            // Ability 1
+		"Ability2"                "meepo_earthbind"                                    // Ability 2
+        "Ability3"                "puck_phase_shift"                            // Ability 3
+        
+		"Ability6"                "tinker_rearm"     
+		   
+		
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0.0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0.0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0.0"	
+		"ArmorPhysical"		"1"
+    }
+
+
+    
+}
